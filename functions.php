@@ -149,49 +149,10 @@ add_action( 'init','pro_services' );
    add_action( 'init','pro_testi' );
 
 
-   function custom_blog(){
-      register_post_type('cutom_blog',array(
-         'labels'  =>array(
-            'menu_name'       =>'Custom Blog',
-            'name'            =>'Custom Blog',
-            'add_new'         =>'Add New',
-            'all_items'       =>'Custom Blog',
-            'all_new_items'   =>'Add New',
-            'hierarchical'        => false,
-        
-         ),
-         'public'             =>true,
-         'menu_icon'          =>'dashicons-welcome-write-blog',
-         'supports'           =>array('thumbnail','title','editor','author','page-attributes','post-formats','tag','trackbacks','excerpt','permalink'),
-         
-        'show_ui'             => true,
-        'show_in_menu'        => true,
-        'show_in_nav_menus'   => true,
-        'show_in_admin_bar'   => true,
-        'menu_position'       => 5,
-        'can_export'          => true,
-        'has_archive'         => true,
-        'exclude_from_search' => false,
-        'publicly_queryable'  => true,
-        'capability_type'     => 'post',
-        'show_in_rest' => true,
-      ));
-   }
-   add_action( 'init','custom_blog' );
-
    
 
 
 
-
-   
-
-
-  
-
-  
-
- 
    include_once('inc/cmb2_custom_field.php');
 
 

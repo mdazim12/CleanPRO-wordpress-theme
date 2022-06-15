@@ -32,7 +32,7 @@
                     $slider_btn_link   = get_post_meta( get_the_ID(),'slider_button_link', true );
                     $image = wp_get_attachment_image( get_post_meta( get_the_ID(), 'wiki_test_image_id', 1 ), 'medium' );
                     ?>
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-target="#header-carousel" data-slide-to="0">
                     <img class="img-fluid" src="<?php echo $image;  ?>" alt="Image">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
@@ -200,7 +200,7 @@
                                             <i class="fa fa-2x fa-hotel"></i>
                                         </div>
                                         <h5 class="font-weight-bold mb-4 px-4"><?php the_title();?></h5>
-                                        <img src="<?php the_post_thumbnail( ); ?> ">
+                                        <?php the_post_thumbnail( ); ?> 
                                     </div>
                        <?php     endwhile;
                             }
@@ -270,7 +270,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
                         <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php the_post_thumbnail();?>">
+                            <?php the_post_thumbnail('thumbnail', array( 'class' => 'img-fluid w-100' ));?>
                         </div>
                         <div class="portfolio-text bg-primary">
                             <h4 class="font-weight-bold mb-4"><?php the_title(); ?></h4>
@@ -288,107 +288,7 @@
                 endwhile;
                 }
             ?>
-            
-               
-
-<!--                 
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio-2.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio-2.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio-3.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio-3.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio-4.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio-4.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio-5.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio-5.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio-6.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Project Name</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio-6.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-
-
-
-
-
-
+       
             </div>
         </div>
         </div>
@@ -436,7 +336,7 @@
                         <div class="team d-flex flex-column text-center rounded overflow-hidden">
                             <div class="position-relative">
                                 <div class="team-img">
-                                    <img class="img-fluid w-100" src="<?php the_post_thumbnail() ;?> ">
+                                    <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid w-100' )) ;?> 
                                 </div>
                                 <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
                                     <a class="btn btn-secondary btn-social mb-2" href="<?php echo $twi_link;?>"><i class="fab fa-twitter"></i></a>
@@ -500,35 +400,6 @@
                     <?php  endwhile;
                         }
                     ?>
-                    
-                       
-
-
-                        <!-- <div class="d-flex flex-column text-white">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial-2.jpg" alt="">
-                                <div class="ml-3">
-                                    <h5 class="text-primary">Client Name</h5>
-                                    <i>Profession</i>
-                                </div>
-                            </div>
-                            <p>Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor  lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.</p>
-                        </div>
-                        <div class="d-flex flex-column text-white">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial-3.jpg" alt="">
-                                <div class="ml-3">
-                                    <h5 class="text-primary">Client Name</h5>
-                                    <i>Profession</i>
-                                </div>
-                            </div>
-                            <p>Tempor at diam tempor sed. Sanctus dolor ipsum ut nonumy amet clita sea. Sed eos sed dolores vero no. Ipsum elitr elitr stet dolor  lorem erat. Diam no amet sea justo vero ut. Dolor ipsum kasd ipsum dolore.</p>
-                        </div> -->
-
-
-
-
-
 
                     </div>
                 </div>
@@ -557,24 +428,10 @@
             </div>
             <div class="row">
 
-         <?php
-           $query = new WP_Query(array(
-             'post_type'    =>'all_cleaner',
-             'post_per_page'=>-1,
-             'order'        =>'DSC'
-         ));
-            if( $query->have_posts()){
-                while( $query->have_posts(  )) : $query->the_post(  ); ?>
-
-                  <h5 class="font-weight-medium mb-2"> <?php the_title( ) ;?></h5>  
-                    <p class="mb-4"><?php the_content() ;?></p>
-         <?php   endwhile;
-            }
-         ?>
-
+       
             <?php
                 $custom_blog = new WP_Query(array(
-                    'post_type'     =>'cutom_blog',
+                    'post_type'     =>'POST',
                     'post_per_page' =>-1,
                     'order'         => 'DSC',
                 ))
@@ -586,48 +443,27 @@
 
                          <div class="col-lg-4 col-md-6 mb-5">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="<?php the_post_thumbnail( ) ;?>" alt="">
+                        <?php the_post_thumbnail('thumbnail', array( 'class' => 'img-fluid rounded w-100' ) ) ;?>
                         <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1"><?php the_date('d-M') ;?></h4>
+                            <h4 class="font-weight-bold mb-n1"><?php the_date('d M') ;?></h4>
                             <small class="text-white text-uppercase"></small>
                         </div>
                     </div>
                     <div class="d-flex mb-2">
-                        <a class="text-secondary text-uppercase font-weight-medium" href=""><?php the_author();?></a>
+                        <a class="text-secondary text-uppercase font-weight-medium" href="<?php the_permalink();?>"><?php the_author(",");?></a>
                         <span class="text-primary px-2">|</span>
-                        <a class="text-secondary text-uppercase font-weight-medium" href="">Cleaning</a>
+                        <a class="text-secondary text-uppercase font-weight-medium" href="<?php the_permalink();?>"><?php the_category(",");?></a>
                     </div>
-                    <h5 class="font-weight-medium mb-2"><?php the_title();?></h5>
-                    <p class="mb-4"><?php the_content( );?></p>
-                    <a class="btn btn-sm btn-primary py-2" href="">Read More</a>
+                   <a href="<?php the_permalink(  );?>"><h5 class="font-weight-medium mb-2"><?php the_title();?></h5></a> 
+                    <p class="mb-4"><?php the_excerpt( );?></p>
+                    <a class="btn btn-sm btn-primary py-2" href="<?php the_permalink( ); ?>">Read More</a>
                 </div>
 
             <?php    endwhile;
                 }
-            ?>
-<!-- 
-               
-                
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <a class="text-secondary text-uppercase font-weight-medium" href="">Admin</a>
-                        <span class="text-primary px-2">|</span>
-                        <a class="text-secondary text-uppercase font-weight-medium" href="">Cleaning</a>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">Rebum lorem eos ipsum diam</h5>
-                    <p class="mb-4">Dolor justo sea kasd lorem clita justo no diam amet. Kasd magna dolor amet</p>
-                    <a class="btn btn-sm btn-primary py-2" href="">Read More</a>
-                </div> -->
+            ?>   
 
-
-
+            
             </div>
         </div>
     </div>
