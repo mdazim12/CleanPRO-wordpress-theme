@@ -7,13 +7,13 @@
         <div class="container py-5">
             <div class="row align-items-center py-4">
                 <div class="col-md-6 text-center text-md-left">
-                    <h1 class="display-4 mb-4 mb-md-0 text-secondary text-uppercase">Detail Page</h1>
+                    <h1 class="display-4 mb-4 mb-md-0 text-secondary text-uppercase"><?php wp_title('');?></h1>
                 </div>
                 <div class="col-md-6 text-center text-md-right">
                     <div class="d-inline-flex align-items-center">
                         <a class="btn btn-sm btn-outline-light" href="">Home</a>
                         <i class="fas fa-angle-double-right text-light mx-2"></i>
-                        <a class="btn btn-sm btn-outline-light disabled" href="">Detail Page</a>
+                        <a class="btn btn-sm btn-outline-light disabled" href="<?php the_permalink();?>"><?php wp_title('');?></a>
                     </div>
                 </div>
             </div>
@@ -176,13 +176,8 @@
                     <div class="mb-5">
                         <h3 class="mb-4 section-title">Tag Cloud</h3>
                         <div class="d-flex flex-wrap m-n1">
-                      
-
-                           
-                           
-                                    <a href="" class="btn btn-outline-secondary m-1"><?php the_tags(" ");?></a>
-                           
-                        </div>
+                             <?php the_tags(" "," "," ",);?>
+                         </div>
                     </div>
                     <div class="mb-5">
                         

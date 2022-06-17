@@ -11,9 +11,9 @@
                 </div>
                 <div class="col-md-6 text-center text-md-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="btn btn-sm btn-outline-light" href="">Home</a>
+                        <a class="btn btn-sm btn-outline-light" href="<?php home_url();?>">Home</a>
                         <i class="fas fa-angle-double-right text-light mx-2"></i>
-                        <a class="btn btn-sm btn-outline-light disabled" href="">Blog</a>
+                        <a class="btn btn-sm btn-outline-light disabled" href=""><?php wp_title(' ' ); ?></a>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                     <div class="d-flex mb-2">
                         <a class="text-secondary text-uppercase font-weight-medium" href="<?php the_permalink();?>"><?php the_author( );?></a>
                         <span class="text-primary px-2">|</span>
-                        <a class="text-secondary text-uppercase font-weight-medium" href="<?php the_permalink(  );?>"><?php the_tags(' ',' ',' ',);?></a>
+                        <a  href="<?php the_permalink(  );?>"><?php the_tags(",");?></a>
                     </div>
                     <a href="<?php the_permalink();?>"><h5 class="font-weight-medium mb-2"><?php the_title( );?></h5></a>
                     <p class="mb-4"><?php the_excerpt();?></p>
@@ -70,21 +70,19 @@
                 <div class="col-12">
                     <nav aria-label="Page navigation">
                       <ul class="pagination pagination-lg justify-content-center mb-0">
-                        <li class="page-item disabled">
-                          <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                       
+                        <li class="page-item active page-link">
+                        <?php  next_posts_link( 'Older posts' );?>
+                        <?php previous_posts_link( 'Newer posts' );?>
+                         </li>
+                        <!-- <li class="page-item"><a class="page-link" href="#"></a></li>
+                        <li class="page-item"><a class="page-link" href="#"> ?></a></li>
                         <li class="page-item">
                           <a class="page-link" href="#" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                             <span class="sr-only">Next</span>
                           </a>
-                        </li>
+                        </li> -->
                       </ul>
                     </nav>
                 </div>
@@ -92,5 +90,6 @@
         </div>
     </div>
     <!-- Blog End -->
+   
 
 <?php get_footer();?>
