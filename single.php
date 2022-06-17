@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="col-lg-4 mt-5 mt-lg-0">
-
+                   
                     <div class="d-flex flex-column text-center bg-secondary rounded mb-5 py-5 px-4">
                         
                         <div class="img-fluid rounded-circle mx-auto mb-3" style="width: 100px;">
@@ -176,9 +176,12 @@
                     <div class="mb-5">
                         <h3 class="mb-4 section-title">Tag Cloud</h3>
                         <div class="d-flex flex-wrap m-n1">
-                       
-                            <a href="" class="btn btn-outline-secondary m-1"> </a>
-                            <?php the_tags(' ');?>
+                      
+
+                           
+                           
+                                    <a href="" class="btn btn-outline-secondary m-1"><?php the_tags(" ");?></a>
+                           
                         </div>
                     </div>
                     <div class="mb-5">

@@ -41,7 +41,7 @@ with others.
 }
 
 .clean_menu li a:hover {
-    color: #a02332;
+    color: #23A036;
 }
 
 
@@ -76,4 +76,10 @@ input#submit:hover {
 div#respond {
     background-color: #f5f5f5;
     padding: 40px;
+}
+
+.mb-2 a {
+    color: #23a036;
+    font-weight: 500;
+    text-transform: uppercase;
 }
