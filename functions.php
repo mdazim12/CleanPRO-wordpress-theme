@@ -154,6 +154,8 @@ add_action( 'init','pro_services' );
 
 
    include_once('inc/cmb2_custom_field.php');
+   include_once('inc/redux/redux-framework.php');
+   include_once('inc/redux/sample/config.php');
 
 
 

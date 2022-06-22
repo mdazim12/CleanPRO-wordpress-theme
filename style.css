@@ -103,22 +103,27 @@ div#respond {
 
 .error {
     display: flex;
+    padding: 50px 0px;
+    margin-top: 20px;
 }
 
 .img_err {
     width: 100%;
 }
-.erruu{
+
+.erruu {
     padding: 70px 0px;
 }
+
 .err_tittle {
     text-align: center;
     width: 100%;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
 }
-.err_des{
+
+.err_des {
     text-align: center;
     width: 100%;
 }
