@@ -13,7 +13,7 @@ if ( ! class_exists( 'Redux' ) ) {
 }
 
 // This is your option name where all the Redux data is stored.
-$opt_name = 'redux_demo';  // YOU MUST CHANGE THIS.  DO NOT USE 'redux_demo' IN YOUR PROJECT!!!
+$opt_name = 'cleanPRO';  // YOU MUST CHANGE THIS.  DO NOT USE 'redux_demo' IN YOUR PROJECT!!!
 
 // Uncomment to disable demo mode.
 /* Redux::disable_demo(); */  // phpcs:ignore Squiz.PHP.CommentedOutCode
@@ -317,7 +317,7 @@ Redux::set_section(
 	)
 );
 
-require_once Redux_Core::$dir . '../sample/sections/design-fields/background.php';
+
 require_once Redux_Core::$dir . '../sample/sections/design-fields/box-shadow.php';
 require_once Redux_Core::$dir . '../sample/sections/design-fields/border.php';
 require_once Redux_Core::$dir . '../sample/sections/design-fields/dimensions.php';
@@ -330,12 +330,14 @@ require_once Redux_Core::$dir . '../sample/sections/design-fields/spacing.php';
 Redux::set_section (  
 	$opt_name,
 	array(
-		'title'	=> 'Header Options',
+		'title'	=>esc_html__( 'Pages Content ', 'cleanPRO' ),
 		'id'	=> 'header_option',
+		'desc'	=> '<p class="description">' . esc_html__( 'This Section should be visible only in Customizer', 'cleanPRO' ) . '</p>',
 		'icon'	=>'el el-lines '
 	)
 );
-
+require_once Redux_Core::$dir . '../sample/sections/home-content/home_content.php';
+require_once Redux_Core::$dir . '../sample/sections/about-content/about_content.php';
 
 
 
