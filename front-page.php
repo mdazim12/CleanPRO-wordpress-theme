@@ -1,6 +1,7 @@
 
 
 <?php get_header(); ?>
+<?php global $cleanPRO;?>
 
 
 
@@ -79,7 +80,7 @@
         </div>
     </div>
     <!-- Carousel End -->
-    <?php print_r($slider_btn_link)?>
+  
 
     <!-- Contact Info Start -->
     <div class="container-fluid pb-5 contact-info">
@@ -88,8 +89,8 @@
                 <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
                     <i class="fa fa-3x fa-map-marker-alt text-secondary mr-4"></i>
                     <div class="">
-                        <h5 class="mb-2">Our Office</h5>
-                        <p class="m-0">123 Street, New York, USA</p>
+                        <h5 class="mb-2"><?php echo $cleanPRO ['home_adress'];?></h5>
+                        <p class="m-0"><?php echo $cleanPRO ['home_aadress_value'];?></p>
                     </div>
                 </div>
             </div>
@@ -97,8 +98,8 @@
                 <div class="contact-info-item d-flex align-items-center justify-content-center bg-secondary text-white py-4 py-lg-0">
                     <i class="fa fa-3x fa-envelope-open text-primary mr-4"></i>
                     <div class="">
-                        <h5 class="mb-2">Email Us</h5>
-                        <p class="m-0">info@example.com</p>
+                        <h5 class="mb-2"> <?php echo $cleanPRO ['email_title']; ?></h5>
+                        <p class="m-0"> <?php echo $cleanPRO ['email_value']; ?></p>
                     </div>
                 </div>
             </div>
@@ -106,8 +107,8 @@
                 <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
                     <i class="fa fa-3x fa-phone-alt text-secondary mr-4"></i>
                     <div class="">
-                        <h5 class="mb-2">Call Us</h5>
-                        <p class="m-0">+012 345 6789</p>
+                        <h5 class="mb-2"><?php echo $cleanPRO ['call_title'];?></h5>
+                        <p class="m-0"><?php echo $cleanPRO ['call_number'];?></p>
                     </div>
                 </div>
             </div>
@@ -121,21 +122,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="d-flex flex-column align-items-center justify-content-center bg-about rounded h-100 py-5 px-3">
-                        <i class="fa fa-5x fa-award text-primary mb-4"></i>
-                        <h1 class="display-2 text-white mb-2" data-toggle="counter-up">25</h1>
-                        <h2 class="text-white m-0">Years Experience</h2>
+                    <div class="d-flex flex-column align-items-center justify-content-center bg-about rounded h-100 py-5 px-3" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo $cleanPRO['expe_background']['thumbnail'];?>,";>
+                        <i class="fa fa-5x fa-award text-primary mb-4" ></i>
+                        <h1 class="display-2 text-white mb-2" data-toggle="counter-up"><?php echo $cleanPRO ['years_expe'];?></h1>
+                        <h2 class="text-white m-0"><?php echo $cleanPRO ['exper_title'];?></h2>
                     </div>
                 </div>
                 <div class="col-lg-7 pt-5 pb-lg-5">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Learn About Us</h6>
-                    <h1 class="mb-4 section-title">We Provide The Best Cleaning Services</h1>
-                    <h5 class="text-muted font-weight-normal mb-3">Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet sed vero dolor sea lorem justo est dolor eos</h5>
-                    <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3"><?php echo $cleanPRO ['about_mini_title']?></h6>
+                    <h1 class="mb-4 section-title"><?php echo $cleanPRO ['about_title']?></h1>
+                    <h5 class="text-muted font-weight-normal mb-3"><?php echo $cleanPRO ['about_des'];?></p>
                     <div class="d-flex align-items-center pt-4">
-                        <a href="" class="btn btn-primary mr-5">Learn More</a>
+                        <a href="<?php echo esc_url( $cleanPRO  ['about_btn_link'] ); ?>" class="btn btn-primary mr-5"><?php echo $cleanPRO['about_btn'];?></a>
                         <button type="button" class="btn-play" data-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            data-src="<?php echo esc_url( $cleanPRO ['about_vedio_link'] );?>" data-target="#videoModal">
                             <span></span>
                         </button>
                         <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
@@ -222,27 +222,27 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-7 pt-lg-5 pb-3">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Why Choose Us</h6>
-                    <h1 class="mb-4 section-title">25 Years Experience In Cleaning Industry</h1>
-                    <p class="mb-4">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3"> <?php echo $cleanPRO ['experince_mini_title'];?> </h6>
+                    <h1 class="mb-4 section-title"><?php echo $cleanPRO['experince_title'];?></h1>
+                    <p class="mb-4"><?php echo $cleanPRO['experince_des'];?></p>
                     <div class="row">
                         <div class="col-sm-4">
-                            <h1 class="text-secondary mb-2" data-toggle="counter-up">225</h1>
-                            <h6 class="font-weight-semi-bold mb-sm-4">Our Cleaners</h6>
+                            <h1 class="text-secondary mb-2" data-toggle="counter-up"> <?php echo $cleanPRO ['experince_cleaner'];?> </h1>
+                            <h6 class="font-weight-semi-bold mb-sm-4"><?php echo $cleanPRO['experince_cleaner_title'];?></h6>
                         </div>
                         <div class="col-sm-4">
-                            <h1 class="text-secondary mb-2" data-toggle="counter-up">1050</h1>
-                            <h6 class="font-weight-semi-bold mb-sm-4">Happy Clients</h6>
+                            <h1 class="text-secondary mb-2" data-toggle="counter-up"><?php echo $cleanPRO ['experince_clients'];?></h1>
+                            <h6 class="font-weight-semi-bold mb-sm-4"><?php echo $cleanPRO ['experince_clients_title'];?></h6>
                         </div>
                         <div class="col-sm-4">
-                            <h1 class="text-secondary mb-2" data-toggle="counter-up">2500</h1>
-                            <h6 class="font-weight-semi-bold mb-sm-4">Projects Done</h6>
+                            <h1 class="text-secondary mb-2" data-toggle="counter-up"><?php echo $cleanPRO['experince_projects'];?></h1>
+                            <h6 class="font-weight-semi-bold mb-sm-4"><?php echo $cleanPRO ['experince_project_title'];?></h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/feature.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="<?php echo $cleanPRO ['experince_background'] ['thumbnail']; ?>" style="object-fit: cover;">
                     </div>
                 </div>
             </div>

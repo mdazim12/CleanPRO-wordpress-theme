@@ -1,4 +1,4 @@
-
+<?php global $cleanPRO;?>
 
 <!DOCTYPE html>
 <html <?php language_attributes();?>>
@@ -34,28 +34,28 @@
                     <div class="col-lg-7 text-left text-white">
                         <div class="h-100 d-inline-flex align-items-center border-right border-primary py-2 px-3">
                             <i class="fa fa-envelope text-primary mr-2"></i>
-                            <small>info@example.com</small>
+                            <small><?php echo $cleanPRO['email_value'];?></small>
                         </div>
                         <div class="h-100 d-inline-flex align-items-center py-2 px-2">
                             <i class="fa fa-phone-alt text-primary mr-2"></i>
-                            <small>+012 345 6789</small>
+                            <small><?php echo $cleanPRO ['call_number'];?></small>
                         </div>
                     </div>
                     <div class="col-lg-5 text-right">
                         <div class="d-inline-flex align-items-center pr-2">
-                            <a class="text-primary p-2" href="">
+                            <a class="text-primary p-2" href="<?php echo esc_url( $cleanPRO ['fb_link'], );?>">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a class="text-primary p-2" href="">
+                            <a class="text-primary p-2" href="<?php echo esc_url( $cleanPRO ['tw_link'], );?>">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a class="text-primary p-2" href="">
+                            <a class="text-primary p-2" href="<?php echo esc_url( $cleanPRO ['linksin_link'], );?>">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a class="text-primary p-2" href="">
+                            <a class="text-primary p-2" href="<?php echo esc_url( $cleanPRO ['insta_link'], );?>">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a class="text-primary p-2" href="">
+                            <a class="text-primary p-2" href="<?php echo esc_url( $cleanPRO ['youube_link'], );?>">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>

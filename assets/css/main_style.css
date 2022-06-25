@@ -11169,30 +11169,26 @@ h6,
 }
 
 .bg-about {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../<?php echo get_template_directory_uri();
-  ?>/assets/img/about.jpg),
-  no-repeat center center;
+ background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-service {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../<?php echo get_template_directory_uri();
-  ?>/assets/img/carousel-1.jpg),
-  no-repeat center center;
+
+  background-position: center;
   background-size: cover;
 }
 
 .bg-portfolio {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../<?php echo get_template_directory_uri();
-  ?>/assets/img/carousel-2.jpg),
-  no-repeat center center;
+
+
   background-size: cover;
 }
 
 .bg-testimonial {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../<?php echo get_template_directory_uri();
-  ?>/assets/img/carousel-3.jpg),
-  no-repeat center center;
+
+
   background-size: cover;
 }
 
