@@ -196,3 +196,47 @@ Redux::set_section(
 	)
 );
 					/*END EXPERINCE SECTION*/
+
+
+
+
+
+
+					
+					/*START TEAM SECTION*/
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'      => esc_html__( 'Team Content', 'cleanPRO' ),
+		'id'         => 'team_content',
+		'desc'       => esc_html__( ' This section is only for Team section', 'cleanPro' ) ,
+		'subsection' => true,
+		'fields'     => array(
+			array(
+				'id'             => 'team_mini_title',
+				'type'           => 'text',
+				'title'          => esc_html__( 'Team Mini Title', 'cleanPRO' ),
+				'subtitle'       => esc_html__( 'Input Your Team mini title', 'cleanPRO' ),
+				'desc'           => esc_html__( 'This felids will be show your team mini title', 'your-textdomain-here' ),
+				'default'        =>'MEET OUR TEAM',
+			),
+			array(
+				'id'             => 'team_title',
+				'type'           => 'text',
+				'title'          => esc_html__( 'Team Main title', 'cleanPRO' ),
+				'desc'           => esc_html__( 'This felids will be show your team title', 'your-textdomain-here' ),
+				'default'        =>'Meet Our Highly Experienced Cleaners',
+			),
+			array(
+				'id'             => 'team_des',
+				'type'           => 'editor',
+				'title'          => esc_html__( 'Team Experince', 'cleanPRO' ),
+				'subtitle'       => esc_html__( 'Input your description here', 'cleanPRO' ),
+				'desc'           => esc_html__( 'This felids will be show your team description .', 'cleanPRO' ),
+				'default'        => 'Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet sed vero dolor sea lorem justo est dolor eos
+                Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor mmmm',
+			),
+		),
+	)
+);
+					/*END TEAM SECTION*/

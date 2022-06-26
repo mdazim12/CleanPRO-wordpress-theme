@@ -308,23 +308,6 @@ Redux::set_help_sidebar( $opt_name, $content );
 
 
 // -> START Design Fields.
-Redux::set_section(
-	$opt_name,
-	array(
-		'title' => esc_html__( 'Design Fields', 'your-textdomain-here' ),
-		'id'    => 'design',
-		'icon'  => 'el el-wrench',
-	)
-);
-
-
-require_once Redux_Core::$dir . '../sample/sections/design-fields/box-shadow.php';
-require_once Redux_Core::$dir . '../sample/sections/design-fields/border.php';
-require_once Redux_Core::$dir . '../sample/sections/design-fields/dimensions.php';
-require_once Redux_Core::$dir . '../sample/sections/design-fields/spacing.php';
-
-
-
 
 /* CleanPRO Fields Strat */
 Redux::set_section (  
@@ -338,6 +321,8 @@ Redux::set_section (
 );
 require_once Redux_Core::$dir . '../sample/sections/home-content/home_content.php';
 require_once Redux_Core::$dir . '../sample/sections/about-content/about_content.php';
+require_once Redux_Core::$dir . '../sample/sections/service-content/service_content.php';
+require_once Redux_Core::$dir . '../sample/sections/project-content/project_content.php';
 
 
 

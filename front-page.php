@@ -167,15 +167,14 @@
 
 
     <!-- Services Start -->
-    <div class="container-fluid bg-service py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo get_template_directory_uri();
-    ?>/assets/img/carousel-2.jpg);">
+    <div class="container-fluid bg-service py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo esc_url($cleanPRO['ser_background']['thumbnail']);?>">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Our Services</h6>
-                    <h1 class="mb-4 section-title text-white">Awesome Cleaning Services For You</h1>
-                    <p class="text-white">Invidunt lorem justo clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum</p>
-                    <a href="" class="btn btn-primary mt-3 py-2 px-4">More Services</a>
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3"><?php echo $cleanPRO ['ser_mini_title'];?></h6>
+                    <h1 class="mb-4 section-title text-white"><?php echo $cleanPRO ['ser_title'];?></h1>
+                    <p class="text-white"><?php echo $cleanPRO ['ser_des'];?></p>
+                    <a href="<?php echo esc_url($cleanPRO['ser_btn_link']);?>" class="btn btn-primary mt-3 py-2 px-4"><?php echo $cleanPRO['ser_btn'];?></a>
                 </div>
 
 
@@ -252,8 +251,7 @@
 
 
     <!-- Portfolio Start -->
-    <div class="container-fluid bg-portfolio py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo get_template_directory_uri();
-    ?>/assets/img/carousel-2.jpg);">
+    <div class="container-fluid bg-portfolio py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo $cleanPRO ['proj_background'] ['thumbnail'];?>);">
         <div class="container py-5">
             <div class="row m-0 portfolio-container">
 
@@ -303,11 +301,11 @@
         <div class="container py-5">
             <div class="row align-items-end mb-4">
                 <div class="col-lg-6">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Meet Our Team</h6>
-                    <h1 class="section-title mb-3">Meet Our Highly Experienced Cleaners</h1>
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3"><?php echo $cleanPRO ['team_mini_title'];?></h6>
+                    <h1 class="section-title mb-3"><?php echo $cleanPRO ['team_title'];?></h1>
                 </div>
                 <div class="col-lg-6">
-                    <h4 class="font-weight-normal text-muted mb-3">Eirmod kasd duo eos et magna, diam dolore stet sea clita sit ea erat lorem. Ipsum eos ipsum magna lorem stet</h4>
+                    <h4 class="font-weight-normal text-muted mb-3"><?php echo $cleanPRO ['team_des'];?></h4>
                 </div>
             </div>
             <div class="row">
@@ -365,13 +363,12 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-testimonial py-5 " style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo get_template_directory_uri();
-    ?>/assets/img/carousel-3.jpg);>
+    <div class="container-fluid bg-testimonial py-5 " style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo esc_url($cleanPRO['testi_background']['thumbnail']);?>">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-7 pt-lg-5 pb-5">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Testimonial</h6>
-                    <h1 class="section-title text-white mb-5">What Our Clients Say</h1>
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3"><?php echo $cleanPRO['testi_mini_title'];?></h6>
+                    <h1 class="section-title text-white mb-5"><?php echo $cleanPRO['testi_title'];?></h1>
                     <div class="owl-carousel testimonial-carousel position-relative">
                     
                     <?php
@@ -407,7 +404,7 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="<?php echo $cleanPRO['testi_images'] ['thumbnail']; ?>" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -421,11 +418,11 @@
         <div class="container pt-5">
             <div class="row align-items-end mb-4">
                 <div class="col-lg-6">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Latest Blog</h6>
-                    <h1 class="section-title mb-3">Latest Articles From Our Blog Post</h1>
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3"><?php echo $cleanPRO['blog_mini_title'];?></h6>
+                    <h1 class="section-title mb-3"><?php echo $cleanPRO['blog_title'];?></h1>
                 </div>
                 <div class="col-lg-6">
-                    <h4 class="font-weight-normal text-muted mb-3">Eirmod kasd duo eos et magna, diam dolore stet sea clita sit ea erat lorem. Ipsum eos ipsum magna lorem stet</h4>
+                    <h4 class="font-weight-normal text-muted mb-3"><?php echo $cleanPRO['blog_des'];?></h4>
                 </div>
             </div>
             <div class="row">
