@@ -465,7 +465,11 @@
             </div>
         </div>
     </div>
+    
     <!-- Blog End -->
+
+ 
+
 <?php get_footer();?>
 
     

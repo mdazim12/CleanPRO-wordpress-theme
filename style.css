@@ -127,3 +127,7 @@ div#respond {
     text-align: center;
     width: 100%;
 }
+
+li.widget_block,.widget {
+    list-style: none;
+}
