@@ -128,6 +128,36 @@ div#respond {
     width: 100%;
 }
 
-li.widget_block,.widget {
+li.widget_block,
+.widget {
     list-style: none;
+}
+
+ul.wp-block-categories-list.wp-block-categories li {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    display: flex;
+    background-color: #F5F5F5 !important;
+    margin-left: -40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wp-block-search__input{
+    border: 1px solid #ffc600!important;
+    border-radius: 20px;
+}
+.wp-block-search__button  {
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 100px;
+    color: #212529;
+    background-color: #FFC600;
+    border-color: #FFC600;
+}
+
+.wp-block-search__button:hover{
+    background-color:  #d9a800;
+   
 }

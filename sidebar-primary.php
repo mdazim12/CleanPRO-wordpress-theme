@@ -1,10 +1,19 @@
 <?php
+                  /*START FOOTER WIDGETS*/
 
-
-
- add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
-    /* Register the 'primary' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'sidebar_widgets',
+            'name'          => __( 'Sidebar Widgets' ),
+            'description'   => __( 'A short description of the sidebar.' ),
+            'before_widget' => '<li id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</li>',
+            'before_title'  => '<h3 class="mb-4 section-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+
     register_sidebar(
         array(
             'id'            => 'widget_one',
@@ -44,10 +53,11 @@ function my_register_sidebars() {
             'after_title'   => '</h3>',
         )
     );
-    /* Repeat register_sidebar() code for additional sidebars. */
+   
 }
+add_action( 'widgets_init', 'my_register_sidebars' );
 
-//
+                    /*END FOOTER WIDGETS*/
 
 
 
