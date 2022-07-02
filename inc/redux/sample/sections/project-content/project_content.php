@@ -181,6 +181,31 @@ Redux::set_section(
 
 
 
+							
+                        /*START FOOTER SECTION     */
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'      => esc_html__( 'Footer Content', 'cleanPRO' ),
+		'id'         => 'footer_content',
+		'desc'       => esc_html__( ' This section is only for footer Pages', 'cleanPro' ) ,
+		'subsection' => true,
+		'fields'     => array(
+			array(
+				'id'             => 'foo_mini_title',
+				'type'           => 'editor',
+				'title'          => esc_html__( 'Footer text', 'cleanPRO' ),
+				'default'        =>'All Rights Reserved. Designed by ',
+			),
+            
+            
+		),
+	)
+);
+                               /*END FOOTER SECTION     */
+
+
+
 
 
 

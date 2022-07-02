@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="mb-5">
-                        <?php the_post_thumbnail('thumbnail', array( 'class' => 'img-fluid rounded w-100 mb-4' ) )?>
+                        <?php the_post_thumbnail('blog-thumb', array( 'class' => 'img-fluid rounded w-100 mb-4' ) )?>
                         <?php the_content( );?>
                     </div>
 

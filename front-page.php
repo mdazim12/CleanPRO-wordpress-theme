@@ -122,7 +122,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="d-flex flex-column align-items-center justify-content-center bg-about rounded h-100 py-5 px-3" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo $cleanPRO['expe_background']['thumbnail'];?>,";>
+                    <div class="d-flex flex-column align-items-center justify-content-center bg-about rounded h-100 py-5 px-3" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo $cleanPRO['expe_background']['url'];?>";>
                         <i class="fa fa-5x fa-award text-primary mb-4" ></i>
                         <h1 class="display-2 text-white mb-2" data-toggle="counter-up"><?php echo $cleanPRO ['years_expe'];?></h1>
                         <h2 class="text-white m-0"><?php echo $cleanPRO ['exper_title'];?></h2>
@@ -167,7 +167,7 @@
 
 
     <!-- Services Start -->
-    <div class="container-fluid bg-service py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo esc_url($cleanPRO['ser_background']['thumbnail']);?>">
+    <div class="container-fluid bg-service py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo esc_url($cleanPRO['ser_background']['url']);?>">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -251,7 +251,7 @@
 
 
     <!-- Portfolio Start -->
-    <div class="container-fluid bg-portfolio py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo $cleanPRO ['proj_background'] ['thumbnail'];?>);">
+    <div class="container-fluid bg-portfolio py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo $cleanPRO ['proj_background'] ['url'];?>);">
         <div class="container py-5">
             <div class="row m-0 portfolio-container">
 
@@ -270,7 +270,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
                         <div class="portfolio-img">
-                            <?php the_post_thumbnail('thumbnail', array( 'class' => 'img-fluid w-100' ));?>
+                            <?php the_post_thumbnail('blog-thumb', array( 'class' => 'img-fluid w-100' ));?>
                         </div>
                         <div class="portfolio-text bg-primary">
                             <h4 class="font-weight-bold mb-4"><?php the_title(); ?></h4>
@@ -336,7 +336,7 @@
                         <div class="team d-flex flex-column text-center rounded overflow-hidden">
                             <div class="position-relative">
                                 <div class="team-img">
-                                    <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid w-100' )) ;?> 
+                                    <?php the_post_thumbnail( 'team-thumb', array( 'class' => 'img-fluid w-100' )) ;?> 
                                 </div>
                                 <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
                                     <a class="btn btn-secondary btn-social mb-2" href="<?php echo $twi_link;?>"><i class="fab fa-twitter"></i></a>
@@ -363,7 +363,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-testimonial py-5 " style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo esc_url($cleanPRO['testi_background']['thumbnail']);?>">
+    <div class="container-fluid bg-testimonial py-5 " style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(<?php echo esc_url($cleanPRO['testi_background']['url']);?>">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-7 pt-lg-5 pb-5">
@@ -404,7 +404,7 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="<?php echo $cleanPRO['testi_images'] ['thumbnail']; ?>" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="<?php echo $cleanPRO['testi_images'] ['url']; ?>" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -441,7 +441,7 @@
 
                          <div class="col-lg-4 col-md-6 mb-5">
                     <div class="position-relative mb-4">
-                        <?php the_post_thumbnail('thumbnail', array( 'class' => 'img-fluid rounded w-100' ) ) ;?>
+                        <?php the_post_thumbnail('medium_large', array( 'class' => 'img-fluid rounded w-100' ) ) ;?>
                         <div class="blog-date">
                             <h4 class="font-weight-bold mb-n1"><?php the_date('d M') ;?></h4>
                             <small class="text-white text-uppercase"></small>
