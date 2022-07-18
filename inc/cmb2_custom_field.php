@@ -151,10 +151,10 @@ function cmb2_sample_metaboxes() {
         'type'    => 'file',
         // Optional:
         'options' => array(
-            'url' => false, // Hide the text input for the url
+            'url' => true, // Hide the text input for the url
         ),
         'text'    => array(
-            'add_upload_file_text' => 'Add File' // Change upload button text. Default: "Add or Upload File"
+            'add_upload_file_text' => 'Add slider Images' // Change upload button text. Default: "Add or Upload File"
         ),
         // query_args are passed to wp.media's library query.
         'query_args' => array(

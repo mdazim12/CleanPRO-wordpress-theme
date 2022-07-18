@@ -77,6 +77,17 @@
     </div>
     <!-- Footer End -->
 
+    <div class="container">
+        <div class="row">
+            <h1><?php echo $cleanPRO ['sliders'] [0]['title'];?></h1>
+            <h1><?php echo $cleanPRO ['sliders'][0] ['sub_title'];?></h1>
+            <h1><?php echo $cleanPRO ['sliders'][0] ['button'];?></h1>
+            <img src="<?php echo $cleanPRO ['sliders'] [0] ['images']  ?>" alt="iamges">
+
+        </div>
+    </div>
+
+    <?php print_r($cleanPRO ['sliders']) ;?>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>

@@ -133,21 +133,44 @@ if ( ! class_exists( 'Redux_Slides', false ) ) {
 							name="' . esc_attr( $this->field['name'] . '[' . $x . '][title]' . $this->field['name_suffix'] ) . '"
 							value="' . esc_attr( $slide['title'] ) . '"
 							placeholder="' . esc_attr( $placeholder ) . '" class="full-text slide-title" />';
+							echo '</li>';
 
-					echo '</li>';
 
-					if ( $this->field['show']['description'] ) {
-						$placeholder = ( isset( $this->field['placeholder']['description'] ) ) ? esc_attr( $this->field['placeholder']['description'] ) : __( 'Description', 'redux-framework' );
-						echo '<li>';
-						echo '<textarea
-								name="' . esc_attr( $this->field['name'] . '[' . $x . '][description]' . $this->field['name_suffix'] ) . '"
-								id="' . esc_attr( $this->field['id'] ) . '-description_' . esc_attr( $x ) . '"
-								placeholder="' . esc_attr( $placeholder ) . '"
-								class="large-text"
-								rows="6">' . esc_textarea( $slide['description'] ) . '</textarea>';
 
-						echo '</li>';
-					}
+							$placeholder = ( isset( $this->field['placeholder']['sub_title'] ) ) ? esc_attr( $this->field['placeholder']['sub_title'] ) : __( 'Sub title here', 'redux-framework' );
+							echo '<li>';
+							echo '<input
+									type="' . esc_attr( $title_type ) . '"
+									id="' . esc_attr( $this->field['id'] ) . '-sub_title' . esc_attr( $x ) . '"
+									name="' . esc_attr( $this->field['name'] . '[' . $x . '][sub_title]' . $this->field['name_suffix'] ) . '"
+									value="' . esc_attr( $slide['title'] ) . '"
+									placeholder="' . esc_attr( $placeholder ) . '" 
+									class="full-text slide-title" />';
+							echo '</li>';
+
+							$placeholder = ( isset( $this->field['placeholder']['slider_button'] ) ) ? esc_attr( $this->field['placeholder']['button'] ) : __( 'Button text here', 'redux-framework' );
+							echo '<li>';
+							echo '<input
+									type="' . esc_attr( $title_type ) . '"
+									id="' . esc_attr( $this->field['id'] ) . '-button' . esc_attr( $x ) . '"
+									name="' . esc_attr( $this->field['name'] . '[' . $x . '][button]' . $this->field['name_suffix'] ) . '"
+									value="' . esc_attr( $slide['slider_button'] ) . '"
+									placeholder="' . esc_attr( $placeholder ) . '" 
+									class="full-text slide-title" />';
+							echo '</li>';
+
+					// if ( $this->field['show']['description'] ) {
+					// 	$placeholder = ( isset( $this->field['placeholder']['description'] ) ) ? esc_attr( $this->field['placeholder']['description'] ) : __( 'Description', 'redux-framework' );
+					// 	echo '<li>';
+					// 	echo '<textarea
+					// 			name="' . esc_attr( $this->field['name'] . '[' . $x . '][description]' . $this->field['name_suffix'] ) . '"
+					// 			id="' . esc_attr( $this->field['id'] ) . '-description_' . esc_attr( $x ) . '"
+					// 			placeholder="' . esc_attr( $placeholder ) . '"
+					// 			class="large-text"
+					// 			rows="6">' . esc_textarea( $slide['description'] ) . '</textarea>';
+
+					// 	echo '</li>';
+					// }
 
 					$placeholder = ( isset( $this->field['placeholder']['url'] ) ) ? esc_attr( $this->field['placeholder']['url'] ) : __( 'URL', 'redux-framework' );
 					if ( $this->field['show']['url'] ) {
@@ -272,18 +295,18 @@ if ( ! class_exists( 'Redux_Slides', false ) ) {
 						class="full-text slide-title" />';
 				echo '</li>';
 
-				if ( $this->field['show']['description'] ) {
-					$placeholder = ( isset( $this->field['placeholder']['description'] ) ) ? esc_attr( $this->field['placeholder']['description'] ) : __( 'Description', 'redux-framework' );
+				// if ( $this->field['show']['description'] ) {
+				// 	$placeholder = ( isset( $this->field['placeholder']['description'] ) ) ? esc_attr( $this->field['placeholder']['description'] ) : __( 'Description', 'redux-framework' );
 
-					echo '<li>';
-					echo '<textarea
-							name="' . esc_attr( $this->field['name'] . '[' . $x . '][description]' . $this->field['name_suffix'] ) . '"
-							id="' . esc_attr( $this->field['id'] . '-description_' . $x ) . '"
-							placeholder="' . esc_attr( $placeholder ) . '"
-							class="large-text"
-							rows="6"></textarea>';
-					echo '</li>';
-				}
+				// 	echo '<li>';
+				// 	echo '<textarea
+				// 			name="' . esc_attr( $this->field['name'] . '[' . $x . '][description]' . $this->field['name_suffix'] ) . '"
+				// 			id="' . esc_attr( $this->field['id'] . '-description_' . $x ) . '"
+				// 			placeholder="' . esc_attr( $placeholder ) . '"
+				// 			class="large-text"
+				// 			rows="6"></textarea>';
+				// 	echo '</li>';
+				// }
 
 				$placeholder = ( isset( $this->field['placeholder']['url'] ) ) ? esc_attr( $this->field['placeholder']['url'] ) : __( 'URL', 'redux-framework' );
 

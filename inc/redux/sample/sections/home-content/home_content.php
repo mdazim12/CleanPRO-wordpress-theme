@@ -95,6 +95,13 @@ Redux::set_section(
 				'desc'           => esc_html__( 'Input your youtube link here .', 'cleanPRO' ),
 				'default'        => '#',
 			),
+			array(
+				'id'             => 'sliders',
+				'type'           => 'slides',
+				'title'          => esc_html__( ' Slider ', 'cleanPRO' ),
+				'desc'           => esc_html__( 'Input your youtube link here .', 'cleanPRO' ),
+				'default'        => '#',
+			),
 		),
 	)
 );
