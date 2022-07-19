@@ -162,3 +162,6 @@ ul.wp-block-categories-list.wp-block-categories li {
    
 }
 .slider_hight{height: 500px;}
+.owl-dots {
+    text-align: center!important;
+}

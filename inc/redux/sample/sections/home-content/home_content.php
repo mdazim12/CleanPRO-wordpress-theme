@@ -96,6 +96,15 @@ Redux::set_section(
 				'default'        => '#',
 			),
 			array(
+				'id'             => 'home_logo',
+				'type'           => 'media',
+				'title'          => esc_html__( ' Logo ', 'cleanPRO' ),
+				'desc'           => esc_html__( 'Upload your website logo .', 'cleanPRO' ),
+				'default'  => array(
+					'url'=> get_template_directory_uri().'/assest/img/logo.png',
+				),
+			),
+			array(
 				'id'             => 'sliders',
 				'type'           => 'slides',
 				'title'          => esc_html__( ' Slider ', 'cleanPRO' ),

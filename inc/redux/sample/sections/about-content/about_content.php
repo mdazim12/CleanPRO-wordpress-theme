@@ -21,7 +21,7 @@ Redux::set_section(
 				'type'           => 'text',
 				'title'          => esc_html__( 'Years of Experince', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Input Your expernice year', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your expernice year', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your expernice year', 'cleanPRO' ),
 				'default'        =>'5',
 			),
 			array(
@@ -29,7 +29,7 @@ Redux::set_section(
 				'type'           => 'text',
 				'title'          => esc_html__( 'Experince Title', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Input Your expernice title', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your expernice tile', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your expernice tile', 'cleanPRO' ),
 				'default'        =>'Years Experience',
 			),
 			array(
@@ -37,7 +37,7 @@ Redux::set_section(
 				'type'           => 'media',
 				'title'          => esc_html__( 'Experince Background', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Select your background Images', 'cleanPRO' ),
-				'desc'           => esc_html__( 'Upload your expernice background', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'Upload your expernice background', 'cleanPRO' ),
 				'default'  => array(
 					'url'=> get_template_directory_uri().'/assest/img/about.jpg',
 				),
@@ -51,7 +51,7 @@ Redux::set_section(
 				'type'           => 'text',
 				'title'          => esc_html__( 'About Mini Title', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Input Your about mini section title', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your about section mini title', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your about section mini title', 'cleanPRO' ),
 				'default'        =>'LEARN ABOUT UsS',
 			),
 			array(
@@ -115,14 +115,14 @@ Redux::set_section(
 				'type'           => 'text',
 				'title'          => esc_html__( 'Experince Mini Title', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Input Your expernice mini title', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your expernice mini title', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your expernice mini title', 'cleanPRO' ),
 				'default'        =>'WHY CHOOSE US',
 			),
 			array(
 				'id'             => 'experince_title',
 				'type'           => 'text',
 				'title'          => esc_html__( 'Experince Main  expernice title', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your expernice title', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your expernice title', 'cleanPRO' ),
 				'default'        =>'25 Years Experience In Cleaning Industry',
 			),
 			array(
@@ -139,7 +139,7 @@ Redux::set_section(
 				'type'           => 'text',
 				'title'          => esc_html__( 'Number of Cleaners', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Input Your total clarner', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your total clarner number', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your total clarner number', 'cleanPRO' ),
 				'default'        =>'223',
 			),
 			array(
@@ -147,7 +147,7 @@ Redux::set_section(
 				'type'           => 'text',
 				'title'          => esc_html__( 'Cleaner Title', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Input Your clarner Title', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your clarner title', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your clarner title', 'cleanPRO' ),
 				'default'        =>'Our Cleaners',
 			),
 			array(
@@ -155,7 +155,7 @@ Redux::set_section(
 				'type'           => 'text',
 				'title'          => esc_html__( 'Number of Clients', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Input Your total clients', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your total cleints number', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your total cleints number', 'cleanPRO' ),
 				'default'        =>'10500',
 			),
 			array(
@@ -163,7 +163,7 @@ Redux::set_section(
 				'type'           => 'text',
 				'title'          => esc_html__( 'Clients Title', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Input Your clients Title', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your Clients title', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your Clients title', 'cleanPRO' ),
 				'default'        =>'Happy Clients',
 			),
 			array(
@@ -171,7 +171,7 @@ Redux::set_section(
 				'type'           => 'text',
 				'title'          => esc_html__( 'Number of Projects', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Input Your total projects', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your total projects number', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your total projects number', 'cleanPRO' ),
 				'default'        =>'2500',
 			),
 			array(
@@ -179,7 +179,7 @@ Redux::set_section(
 				'type'           => 'text',
 				'title'          => esc_html__( 'Projct Title', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Input Your Projcts Title', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your projects title', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your projects title', 'cleanPRO' ),
 				'default'        =>'Projects Done',
 			),
 			array(
@@ -187,7 +187,7 @@ Redux::set_section(
 				'type'           => 'media',
 				'title'          => esc_html__( 'Experince Background', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Select your background Images', 'cleanPRO' ),
-				'desc'           => esc_html__( 'Upload your expernice background', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'Upload your expernice background', 'cleanPRO' ),
 				'default'  => array(
 					'url'=> get_template_directory_uri().'/assest/img/about.jpg',
 				),
@@ -217,14 +217,14 @@ Redux::set_section(
 				'type'           => 'text',
 				'title'          => esc_html__( 'Team Mini Title', 'cleanPRO' ),
 				'subtitle'       => esc_html__( 'Input Your Team mini title', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your team mini title', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your team mini title', 'cleanPRO' ),
 				'default'        =>'MEET OUR TEAM',
 			),
 			array(
 				'id'             => 'team_title',
 				'type'           => 'text',
 				'title'          => esc_html__( 'Team Main title', 'cleanPRO' ),
-				'desc'           => esc_html__( 'This felids will be show your team title', 'your-textdomain-here' ),
+				'desc'           => esc_html__( 'This felids will be show your team title', 'cleanPRO' ),
 				'default'        =>'Meet Our Highly Experienced Cleaners',
 			),
 			array(

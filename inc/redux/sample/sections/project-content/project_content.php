@@ -206,25 +206,7 @@ Redux::set_section(
 
 
 
-Redux::set_section(
-	$opt_name,
-	array(
-		'title'      => esc_html__( 'Home Slider', 'cleanPRO' ),
-		'id'         => 'slider_content',
-		'desc'       => esc_html__( ' This section is only for footer Pages', 'cleanPro' ) ,
-		'subsection' => true,
-		'fields'     => array(
-			array(
-				'id'             => 'slider',
-				'type'           => 'slides',
-				'title'          => esc_html__( 'slider text', 'cleanPRO' ),
-				
-			),
-            
-            
-		),
-	)
-);							   
+						   
 
 
 
