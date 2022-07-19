@@ -90,6 +90,26 @@ Redux::set_section(
 				'desc'           => esc_html__( 'This felids will be show your  description', 'cleanPRO' ),
 				'default'        =>'Contact Us For Cleaning Services',
 			),
+			array(
+				'id'        => 'con_maps',
+				'type'      => 'google_maps',
+				'title'     => 'Google Maps',
+				'subtitle'  => 'Select a location from the map below.',
+				'full_width'=> true,
+				'default'   => array (
+					// It's not necessary to fill out *every* default value for any 
+					// given location.  We are doing so here for sample purposes.
+					'street_number' => '1600',
+					'route'         => 'Pennsylvania Avenue Northwest',
+					'locality'      => 'Narsingdi',
+					'administrative_area_level_1' => 'NARSINGDI',
+					'postal_code'   => '1600',
+					'country'       => 'Bangladesh',
+					'latitude'      => '24.134378',
+					'longitude'     => '90.786003',
+					'marker_info'   => 'Home of the President of the United States.',
+				)
+			),
             ),
 	)
 );
